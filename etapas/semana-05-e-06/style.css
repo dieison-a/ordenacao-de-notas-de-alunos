@@ -148,3 +148,9 @@ th {
 td {
     color: var(--text);
 }
+
+@media (max-width: 540px) {
+    .student {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
