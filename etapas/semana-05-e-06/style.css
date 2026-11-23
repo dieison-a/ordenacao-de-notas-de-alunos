@@ -1,0 +1,150 @@
+:root {
+    color-scheme: light;
+    --bg: #f4f7fb;
+    --card: #ffffff;
+    --text: #243447;
+    --muted: #64748b;
+    --accent: #2563eb;
+    --border: #dbe3ec;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    color: var(--text);
+    background: var(--bg);
+}
+
+.card {
+    width: min(100%, 560px);
+    padding: 28px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    box-shadow: 0 8px 24px rgba(36, 52, 71, 0.08);
+}
+
+.table-card {
+    width: min(100%, 620px);
+}
+
+h1 {
+    margin: 0 0 20px;
+    color: var(--accent);
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+form {
+    display: grid;
+    gap: 10px;
+}
+
+fieldset {
+    margin: 0 0 10px;
+    padding: 12px 16px;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+}
+
+legend {
+    padding: 0 6px;
+    color: var(--muted);
+    font-weight: 600;
+}
+
+.student {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(180px, 1fr));
+    gap: 16px;
+    align-items: center;
+}
+
+p {
+    margin: 10px 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    font: inherit;
+    background: #ffffff;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    outline: 2px solid rgba(37, 99, 235, 0.2);
+    border-color: var(--accent);
+}
+
+button {
+    padding: 11px 16px;
+    border: none;
+    border-radius: 4px;
+    background: var(--accent);
+    color: #ffffff;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+button[type="reset"] {
+    background: var(--muted);
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+a {
+    display: inline-block;
+    margin-top: 20px;
+    color: var(--accent);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 8px;
+}
+
+th,
+td {
+    padding: 12px;
+    border: 1px solid var(--border);
+    text-align: center;
+}
+
+th {
+    background: var(--accent);
+    color: #ffffff;
+}
+
+td {
+    color: var(--text);
+}
