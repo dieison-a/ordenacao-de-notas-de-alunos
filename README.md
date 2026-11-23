@@ -4,13 +4,14 @@ Apresenta as versões do exercício de notas e ordenação, mantendo cada códig
 
 ## Executar
 
-Para executar localmente, use PHP com o servidor embutido:
+Cada versão deve ser iniciada na própria pasta. Exemplo:
 
 ```powershell
+cd etapas\semana-03-e-04
 php -S localhost:8000
 ```
 
-Abra http://localhost:8000 no navegador. Nos exercícios que usam MySQL, inicie também um servidor MySQL/MariaDB e ajuste os dados de conexão locais se necessário.
+Acesse http://localhost:8000. Troque a pasta pela versão que deseja executar.
 
 ## Versões preservadas
 
